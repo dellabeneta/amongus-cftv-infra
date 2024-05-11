@@ -1,4 +1,4 @@
-<img src="https://drive.google.com/uc?export=view&id=1BxzLXA--t56fiNVKiqYoExRw1Dj6W4ac" width="1000">
+<img src="https://drive.google.com/uc?export=view&id=18IBzgyPN11I4gKPnw0XQmDYVn64yDYYQ" width="1000">
 
 # Website S3 e CloudFront com Terraform
 
@@ -10,4 +10,4 @@ O Terraform foi todo criado por mim.
 
 ## Arquitetura básica:
 
-<img src="https://drive.google.com/uc?export=view&id=18IBzgyPN11I4gKPnw0XQmDYVn64yDYYQ" width="1000">
+<img src="https://drive.google.com/uc?export=view&id=15p6Jj3Zg0dE5TpLkvwwoFoUUKF8i4Dcy" width="1000">
