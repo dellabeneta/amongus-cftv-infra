@@ -1,4 +1,4 @@
-<img src="https://drive.google.com/uc?export=view&id=18IBzgyPN11I4gKPnw0XQmDYVn64yDYYQ" width="1000">
+<img src="https://drive.google.com/uc?export=view&id=1NdAMje_y8jW29H5DWmX6t8gV1Q-AFOci" width="1000">
 
 # Website S3 e CloudFront com Terraform
 
