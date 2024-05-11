@@ -10,4 +10,4 @@ O Terraform foi todo criado por mim.
 
 ## Arquitetura básica:
 
-<img src="https://drive.google.com/uc?export=view&id=1-lGK1FEoX50Dxxp_SesY4eSNCDVoxw5f" width="1000">
+<img src="https://drive.google.com/uc?export=view&id=15p6Jj3Zg0dE5TpLkvwwoFoUUKF8i4Dcy" width="1000">
