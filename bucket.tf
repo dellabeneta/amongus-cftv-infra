@@ -65,13 +65,3 @@ resource "aws_s3_object" "objects" {
 
   depends_on = [aws_s3_bucket_website_configuration.website_configuration]
 }
-
-output "s3_bucket_properties" {
-  value = {
-    domain_name   = aws_s3_bucket.bucket.bucket_domain_name
-    force_destroy = aws_s3_bucket.bucket.force_destroy
-    id            = aws_s3_bucket.bucket.id
-    //website_endpoint = aws_s3_bucket.bucket.website_endpoint
-  }
-}
-

@@ -13,5 +13,4 @@ resource "aws_route53_record" "amongus" {
     zone_id                = aws_cloudfront_distribution.distribution.hosted_zone_id
     evaluate_target_health = false
   }
-
 }
