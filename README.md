@@ -36,7 +36,7 @@ Vamos detalhar os motivos pelos quais as tecnologias mencionadas são vantajosas
 - **Custo Efetivo**: Para muitos casos de uso, especialmente para sites de baixo a médio tráfego, os custos associados ao CloudFront podem ser bastante baixos, especialmente considerando os benefícios em termos de desempenho e segurança.
 
 ### Melhorias
-- **Workflow para deploy**: Criar uma pipeline para atualizar e deployar, na AWS/S3, mudanças feitas no código fonte da aplicação.
+- **Github Actions**: criar pipeline para atualizar e deployar, na AWS/S3, mudanças feitas no código fonte da aplicação de forma automática.
 
 ### Conclusão
 
