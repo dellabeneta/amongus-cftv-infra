@@ -35,6 +35,9 @@ Vamos detalhar os motivos pelos quais as tecnologias mencionadas são vantajosas
 - **Certificados SSL/TLS**: CloudFront permite a configuração de HTTPS com certificados SSL/TLS, aumentando a segurança da aplicação sem custo adicional para os certificados padrão.
 - **Custo Efetivo**: Para muitos casos de uso, especialmente para sites de baixo a médio tráfego, os custos associados ao CloudFront podem ser bastante baixos, especialmente considerando os benefícios em termos de desempenho e segurança.
 
+### Melhorias
+- **Workflow para deploy**: Criar uma pipeline para atualizar e deployar, na AWS/S3, mudanças feitas no código fonte da aplicação.
+
 ### Conclusão
 
 Combinar Terraform, S3 e CloudFront proporciona uma infraestrutura robusta, escalável e de baixo custo para a hospedagem de páginas estáticas. Terraform facilita a gestão e automação da infraestrutura, enquanto S3 oferece um meio prático e econômico para armazenar e servir conteúdo estático. CloudFront, por sua vez, melhora o desempenho e a segurança do site com custos adicionais mínimos, tornando este trio uma escolha excelente para muitos projetos de hospedagem na nuvem.
