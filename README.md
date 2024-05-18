@@ -10,6 +10,8 @@ Este projeto Terraform implanta um site estático na AWS usando o S3 para armaze
 
 ---
 
+Utilizei módulos apenas para a etapa de upload dos aquivos da aplicação. Foi a única forma que encontrei dos mesmos não "quebrarem" o site após o provisionamento feito pelo Terraform.
+
 Vamos detalhar os motivos pelos quais as tecnologias mencionadas são vantajosas para a hospedagem de páginas estáticas e a infraestrutura como código (IaC):
 
 ### Terraform
