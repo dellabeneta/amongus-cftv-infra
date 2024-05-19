@@ -37,6 +37,7 @@ Vamos detalhar os motivos pelos quais as tecnologias mencionadas são vantajosas
 
 ### Melhorias
 - **Github Actions**: criar pipeline para atualizar e deployar, na AWS/S3, mudanças feitas no código fonte da aplicação de forma automática.
+- **.tfvars**: criar um tfvars para armazenar informações específicas do projeto, deixando o código mais generalista e reaproveitável para outras aplicações.
 
 ### Conclusão
 
