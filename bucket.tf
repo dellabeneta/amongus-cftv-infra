@@ -49,19 +49,25 @@ resource "aws_s3_bucket_website_configuration" "website_configuration" {
   }
 }
 
-module "template_files" {
-  source   = "hashicorp/dir/template"
-  base_dir = "src"
-}
+# Os dois blocos abaixo perderam o sentido e foram comentados a fim de manter
+# um histórico ou permitir o reaproveitamento de código para outro projeto. 
+# A partir de 20.07.2024, nossa aplicação passou a ser controlada/mantida 
+# apenas em seu próprio repositório git em e com um workflow de deploy diretamente
+# para o s3 disprado sempre que houver um PUSH para a branch MAIN.
 
-resource "aws_s3_object" "objects" {
-  for_each     = module.template_files.files
-  bucket       = "amongus.dellabeneta.online"
-  key          = each.key
-  content_type = each.value.content_type
-  source       = each.value.source_path
-  content      = each.value.content
-  etag         = each.value.digests.md5
+# module "template_files" {
+#   source   = "hashicorp/dir/template"
+#   base_dir = "src"
+# }
 
-  depends_on = [aws_s3_bucket_website_configuration.website_configuration]
-}
+# resource "aws_s3_object" "objects" {
+#   for_each     = module.template_files.files
+#   bucket       = "amongus.dellabeneta.online"
+#   key          = each.key
+#   content_type = each.value.content_type
+#   source       = each.value.source_path
+#   content      = each.value.content
+#   etag         = each.value.digests.md5
+
+#   depends_on = [aws_s3_bucket_website_configuration.website_configuration]
+# }
