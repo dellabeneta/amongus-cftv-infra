@@ -1,0 +1,40 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'  # Só executa quando houver mudanças na pasta src
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1  # Ajuste para sua região
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync src/ s3://amongus.dellabeneta.tech/ \
+            --delete \
+            --cache-control "max-age=86400"
+
+      - name: Invalidate CloudFront
+        run: |
+          # Pegando o ID da distribuição do CloudFront via AWS CLI
+          DISTRIBUTION_ID=$(aws cloudfront list-distributions --query "DistributionList.Items[?Aliases.Items[?contains(@, 'amongus.dellabeneta.tech')]].Id" --output text)
+          
+          if [ ! -z "$DISTRIBUTION_ID" ]; then
+            aws cloudfront create-invalidation \
+              --distribution-id $DISTRIBUTION_ID \
+              --paths "/*"
+          fi
