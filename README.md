@@ -1,10 +1,10 @@
-# Among Us CFTV
+# AmongUs - Site estático no Amazon S3
 
-Este projeto combina uma aplicação web divertida inspirada no Among Us com uma infraestrutura robusta na AWS usando Terraform. A aplicação simula um sistema CFTV do jogo Among Us, enquanto a infraestrutura garante sua disponibilidade e performance.
+Este projeto combina uma aplicação web divertida inspirada no Among Us com uma infraestrutura robusta na AWS usando Terraform. É um jogo da memóeira baseado no Amongus.
 
 ## Sobre a Aplicação
 
-Uma interface web que simula as câmeras de segurança do jogo Among Us, completa com:
+Uma interface web do jogo Among Us, completa com:
 - Interface visual no estilo Among Us
 - Efeitos sonoros do jogo
 - Animações e transições entre câmeras
