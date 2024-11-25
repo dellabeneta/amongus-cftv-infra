@@ -1,0 +1,14 @@
+# Configurações obrigatórias
+domain_name = "exemplo.com.br"
+environment = "dev"
+
+# Configurações opcionais
+region = "sa-east-1"
+cloudfront_price_class = "PriceClass_100"
+
+tags = {
+  Project     = "AmongUs"
+  Environment = "dev"
+  Terraform   = "true"
+  Owner       = "time-devops"
+}

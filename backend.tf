@@ -1,7 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "tfstates.dellabeneta.online"
-    key    = "amongus.dellabeneta.online/terraform.tfstate"
-    region = "us-east-1"
+    bucket         = "terraformstates.dellabeneta.tech"
+    key            = "amongus.dellabeneta.tech/terraform.tfstate"
+    region         = "sa-east-1"
+    encrypt        = true
+    dynamodb_table = "terraformstates-lock"
   }
 }

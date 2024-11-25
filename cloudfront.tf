@@ -1,5 +1,7 @@
 data "aws_acm_certificate" "certificate" {
-  domain = "*.dellabeneta.online"
+  provider = aws.us-east-1
+  domain   = "*.dellabeneta.tech"
+  statuses = ["ISSUED"]
 }
 
 resource "aws_cloudfront_distribution" "distribution" {
@@ -8,10 +10,17 @@ resource "aws_cloudfront_distribution" "distribution" {
     origin_id   = "S3-Origin"
   }
 
-  aliases = ["amongus.dellabeneta.online"]
+  aliases = ["amongus.dellabeneta.tech"]
 
   enabled             = true
   default_root_object = "index.html"
+
+  // Configuração do certificado SSL
+  viewer_certificate {
+    acm_certificate_arn      = data.aws_acm_certificate.certificate.arn
+    minimum_protocol_version = "TLSv1.2_2021"
+    ssl_support_method       = "sni-only"
+  }
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
@@ -53,11 +62,6 @@ resource "aws_cloudfront_distribution" "distribution" {
         forward = "none"
       }
     }
-  }
-
-  viewer_certificate {
-    acm_certificate_arn = data.aws_acm_certificate.certificate.arn
-    ssl_support_method  = "sni-only"
   }
 
   restrictions {

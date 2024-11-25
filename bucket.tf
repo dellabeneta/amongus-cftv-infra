@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket" {
-  bucket        = "amongus.dellabeneta.online"
+  bucket        = "amongus.dellabeneta.tech"
   force_destroy = true
 
   tags = {
@@ -18,7 +18,7 @@ resource "aws_s3_bucket_public_access_block" "access_block" {
 }
 
 resource "aws_s3_bucket_policy" "bucket_policy" {
-  bucket = "amongus.dellabeneta.online"
+  bucket = "amongus.dellabeneta.tech"
 
   policy = jsonencode({
     Version = "2012-10-17"
@@ -62,7 +62,7 @@ resource "aws_s3_bucket_website_configuration" "website_configuration" {
 
 # resource "aws_s3_object" "objects" {
 #   for_each     = module.template_files.files
-#   bucket       = "amongus.dellabeneta.online"
+#   bucket       = "amongus.dellabeneta.tech"
 #   key          = each.key
 #   content_type = each.value.content_type
 #   source       = each.value.source_path

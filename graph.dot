@@ -1,0 +1,19 @@
+digraph G {
+  rankdir = "RL";
+  node [shape = rect, fontname = "sans-serif"];
+  "data.aws_acm_certificate.certificate" [label="data.aws_acm_certificate.certificate"];
+  "data.aws_route53_zone.zone" [label="data.aws_route53_zone.zone"];
+  "aws_cloudfront_distribution.distribution" [label="aws_cloudfront_distribution.distribution"];
+  "aws_route53_record.amongus" [label="aws_route53_record.amongus"];
+  "aws_s3_bucket.bucket" [label="aws_s3_bucket.bucket"];
+  "aws_s3_bucket_policy.bucket_policy" [label="aws_s3_bucket_policy.bucket_policy"];
+  "aws_s3_bucket_public_access_block.access_block" [label="aws_s3_bucket_public_access_block.access_block"];
+  "aws_s3_bucket_website_configuration.website_configuration" [label="aws_s3_bucket_website_configuration.website_configuration"];
+  "aws_cloudfront_distribution.distribution" -> "data.aws_acm_certificate.certificate";
+  "aws_cloudfront_distribution.distribution" -> "aws_s3_bucket.bucket";
+  "aws_route53_record.amongus" -> "data.aws_route53_zone.zone";
+  "aws_route53_record.amongus" -> "aws_cloudfront_distribution.distribution";
+  "aws_s3_bucket_policy.bucket_policy" -> "aws_s3_bucket_public_access_block.access_block";
+  "aws_s3_bucket_public_access_block.access_block" -> "aws_s3_bucket.bucket";
+  "aws_s3_bucket_website_configuration.website_configuration" -> "aws_s3_bucket.bucket";
+}
