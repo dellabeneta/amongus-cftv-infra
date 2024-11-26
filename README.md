@@ -42,9 +42,6 @@ A infraestrutura é totalmente gerenciada como código (IaC) usando Terraform e 
 - **GitHub Actions**: CI/CD para deploy automático
 
 ### Diagrama da Infraestrutura
-
-![Diagrama Terraform](terraform-graph.png)
-
 ```mermaid
 flowchart TD
     subgraph AWS Cloud
@@ -74,9 +71,6 @@ flowchart TD
     style S3 fill:#3b48cc,stroke:#232f3e
     style ACM fill:#ff9900,stroke:#232f3e
 ```
-
-# Arquitetura do Projeto Terraform S3 AmongUs
-
 Este diagrama representa a arquitetura da infraestrutura AWS implementada através do Terraform. O fluxo de funcionamento é o seguinte:
 
 1. O usuário acessa o website através do domínio configurado
