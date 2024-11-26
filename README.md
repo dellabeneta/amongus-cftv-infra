@@ -69,9 +69,9 @@ graph TB
     classDef user fill:#004080,stroke:#FFFFFF,color:#FFFFFF
     classDef service fill:#1A1A1A,stroke:#FF9900,color:#FFFFFF
 
-    class U user
-    class AWS Cloud aws
-    class R53,CF,S3,ACM,ST,BP,WH,OAI,CD,BH service
+    class U user;
+    class AWS_Cloud aws;
+    class R53,CF,S3,ACM,ST,BP,WH,OAI,CD,BH service;
 ```
 Este diagrama representa a arquitetura da infraestrutura AWS implementada através do Terraform. O fluxo de funcionamento é o seguinte:
 
