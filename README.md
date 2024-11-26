@@ -1,12 +1,11 @@
 # AmongUs - Site estático no Amazon S3
 
                       ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣿⣷⣶⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣾⣿⣿⡿⢿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀
-                      ⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⡟⠁⣰⣿⣿⣿⡿⠿⠻⠿⣿⣿⣿⣿⣧⠀⠀⠀⠀
-                      ⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⠏⠀⣴⣿⣿⣿⠉⠀⠀⠀⠀⠀⠈⢻⣿⣿⣇⠀⠀⠀
-                      ⠀⠀⠀⠀⢀⣠⣼⣿⣿⣿⡏⠀⢠⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⡀⠀⠀
-                      ⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⡇⠀⢸⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀
-                      ⠀⠀⢰⣿⣿⡿⣿⣿⣿⣿⡇⠀⠘⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⢀⣸⣿⣿⣿⠁⠀⠀
+                      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣾⣿⣿⡿⢿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀
+                      ⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⠏⠀⣴⣿⣿⣿⠉⠀⠀⠀⠀⠀⠈⢻⣿⣿⣇⠀⠀⠀
+                      ⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⠏⠀⢠⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⡀⠀⠀
+                      ⠀⠀⠀⠀⢀⣠⣼⣿⣿⣿⣿⡏⠀⢸⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀
+                      ⠀⠀⢰⣿⣿⡿⣿⣿⣿⣿⣿⡇⠀⠘⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⢀⣸⣿⣿⣿⠁⠀⠀
                       ⠀⠀⣿⣿⣿⠁⣿⣿⣿⡇⠀⠀⠻⣿⣿⣿⣷⣶⣶⣶⣶⣶⣿⣿⣿⣿⠃⠀⠀⠀
                       ⠀⢰⣿⣿⡇⠀⣿⣿⣿⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀
                       ⠀⢸⣿⣿⡇⠀⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠛⠉⢉⣿⣿⠀⠀⠀⠀⠀⠀
@@ -14,7 +13,7 @@
                       ⠀⠀⢻⣿⣿⣶⣿⣿⣿⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣦⡀⠀⠉⠉⠻⣿⣿⡇⠀⠀
                       ⠀⠀⠀⠛⠿⣿⣿⣿⣿⣷⣤⡀⠀⠀⠀⠀⠈⠹⣿⣿⣇⣀⠀⣠⣾⣿⣿⡇⠀⠀
                       ⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣦⣤⣤⣤⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀
-                      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢿⣿⣿⣿⣿⣿⣿⠿⠋⠉⠛⠋⠉⠉⠁⠀⠀⠀⠀
+                      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢿⣿⣿⣿⣿⣿⠿⠋⠉⠛⠋⠉⠉⠁⠀⠀⠀⠀
 Este projeto combina uma aplicação web divertida inspirada no Among Us com uma infraestrutura robusta na AWS usando Terraform. É um jogo da memória baseado no Amongus.
 
 ## Sobre a Aplicação
@@ -43,11 +42,11 @@ A infraestrutura é totalmente gerenciada como código (IaC) usando Terraform e 
 
 ### Diagrama da Infraestrutura
 ```mermaid
-flowchart TD
+graph TB
     subgraph AWS Cloud
-        R53[Route53 DNS] -->|DNS Resolution| CF[CloudFront Distribution]
-        CF -->|Cache and Serve Content| S3[S3 Bucket]
-        ACM[ACM Certificate] -.->|SSL/TLS| CF
+        subgraph Route53 Configuration
+            R53[Route 53] -->|Uses| ACM[Certificate Manager]
+        end
         
         subgraph S3 Configuration
             S3 -->|Stores| ST[Static Files]
@@ -64,12 +63,15 @@ flowchart TD
     
     U[User] -->|Access Website| R53
 
-    style AWS Cloud fill:#ff9900,stroke:#232f3e
-    style U fill:#85bbf0,stroke:#5a5a5a
-    style R53 fill:#945200,stroke:#232f3e
-    style CF fill:#ff9900,stroke:#232f3e
-    style S3 fill:#3b48cc,stroke:#232f3e
-    style ACM fill:#ff9900,stroke:#232f3e
+    %% Estilização otimizada para temas claro e escuro
+    classDef default fill:#2B2B2B,stroke:#7B7B7B,color:#FFFFFF
+    classDef aws fill:#232F3E,stroke:#FF9900,color:#FFFFFF
+    classDef user fill:#004080,stroke:#FFFFFF,color:#FFFFFF
+    classDef service fill:#1A1A1A,stroke:#FF9900,color:#FFFFFF
+
+    class U user
+    class AWS Cloud aws
+    class R53,CF,S3,ACM,ST,BP,WH,OAI,CD,BH service
 ```
 Este diagrama representa a arquitetura da infraestrutura AWS implementada através do Terraform. O fluxo de funcionamento é o seguinte:
 
